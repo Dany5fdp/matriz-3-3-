@@ -4,14 +4,14 @@
 #include<conio.h>
 
 int main(){
-	int m1[3][3] = {{2,1,2},{2,1,2},{2,1,2}}; 
-	int m2[3][3] = {{2,3,2},{2,3,2},{2,3,2}};
+	int m1[3][3] = {{0,2,-1},{-1,0,3},{0,2,-1}}; 
+	int m2[3][3] = {{1,-2,0},{1,0,3},{1,2,3}};
 	int mf[3][3] = {{0,0,0},{0,0,0},{0,0,0}};
-	int i,j;
+	int x,y;  /* x renglon, y columna */
 	
-			for(i=0;i<3;i++){
-				for(j=0;j<3;j++){
-			printf("%d ", m1[i][j]);
+			for(x=0;x<3;x++){
+				for(y=0;y<3;y++){
+			printf("%d ", m1[x][y]);
 			
 			
 		
@@ -21,17 +21,17 @@ int main(){
 	printf("\n");
 	}
 		printf("\n");	
-	for(i=0;i<3;i++){
-		for(j=0;j<3;j++){
-			printf("%d ", m2[i][j]);
+	for(x=0;x<3;x++){
+		for(y=0;y<3;y++){
+			printf("%d ", m2[x][y]);
 		}
 		printf("\n");
 	}
 	printf("\n");
-	for(i=0;i<3;i++){
-				for(j=0;j<3;j++){
-			mf[i][j]= (m1[i][j]* m2[i][j]);
-			printf("%d ", mf[i][j]);
+	for(x=0;x<3;x++){
+				for(y=0;y<3;y++){
+			mf[x][y]= (m1[x][y]* m2[x][y]+m1[x][y]* m2[x][y]+m1[x][y]* m2[x][y]);
+			printf("%d ", mf[x][y]);
 }
 	
 	printf("\n");
